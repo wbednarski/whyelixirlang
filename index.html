@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Elixir, Erlang, BEAM, OTP, and Phoenix form an unparalleled tech stack, delivering high concurrency, fault-tolerance, and real-time performance for scalable and robust applications."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/tailwind-prod.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+
+  <body class="selection:bg-indigo-100 selection:text-indigo-700">
+    <header
+      class="fixed left-0 right-0 top-0 bg-white shadow-sm shadow-indigo-50"
+    >
+      <nav class="mx-auto flex max-w-4xl justify-between px-4 sm:px-6 md:px-8">
+        <h1
+          class="flex items-center border-t-2 border-indigo-700 px-0 text-xl font-light uppercase text-indigo-950 hover:bg-indigo-700 hover:text-indigo-50 sm:border-t-4 sm:px-1 sm:text-2xl md:px-2"
+        >
+          <a href="/">Why Elixir?</a>
+        </h1>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-4xl px-4 sm:px-6 md:px-8">
+      <article class="mt-14 text-center">
+        <header>
+          <p
+            class="font-mono text-lg font-bold uppercase tracking-wide text-red-600 sm:text-xl md:text-2xl"
+          >
+            cost reduction
+          </p>
+          <h2
+            class="my-2 text-3xl font-bold text-neutral-800 subpixel-antialiased sm:my-3 sm:text-4xl md:my-4"
+          >
+            Bleacher Report: From
+            <span
+              class="inline-block border-b-4 border-white bg-neutral-800 px-1 font-mono tracking-wider text-white"
+            >
+              150
+            </span>
+            Servers to Just
+            <span
+              class="inline-block border-b-4 border-white bg-neutral-800 px-1 font-mono tracking-wider text-white"
+            >
+              8
+            </span>
+          </h2>
+        </header>
+        <p
+          class="text-left font-serif text-lg leading-normal text-stone-800 sm:text-xl md:text-2xl"
+        >
+          Efficiently managing more than
+          <span
+            class="bg-yellow-300/70 px-1 py-1 text-yellow-950 md:px-2 md:py-2"
+          >
+            200 million daily push notifications.
+          </span>
+          The system achieves over 1.5 billion monthly page views at its peak
+          performance, all while utilizing a mere 8 servers.
+        </p>
+        <div class="mt-4 text-right font-mono text-sm text-neutral-500">
+          <time
+            class="tracking-tighter"
+            datetime="2021-01-28"
+            aria-label="Information form: January 28th, 2021"
+            >January 28, 2021</time
+          >
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          Bleach Report
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          from Ruby to Elixir
+        </div>
+      </article>
+
+      <article class="mt-14 text-center">
+        <header>
+          <p
+            class="font-mono text-lg font-bold uppercase tracking-wide text-red-600 sm:text-xl md:text-2xl"
+          >
+            team happiness
+          </p>
+          <h2
+            class="my-2 text-3xl font-bold text-neutral-800 subpixel-antialiased sm:my-3 sm:text-4xl md:my-4"
+          >
+            WhatsApp: Only
+            <span
+              class="inline-block border-b-4 border-white bg-neutral-800 px-1 font-mono tracking-wider text-white"
+            >
+              50
+            </span>
+            Software Engineers and
+            <span
+              class="inline-block border-b-4 border-white bg-neutral-800 px-1 font-mono tracking-wider text-white"
+            >
+              900,000,000
+            </span>
+            Users
+          </h2>
+        </header>
+        <p
+          class="text-left font-serif text-lg leading-normal text-stone-800 sm:text-xl md:text-2xl"
+        >
+          WhatsApp utilizes Erlang for concurrent programming, as internet
+          services demand more efficient languages to handle increasing tasks.
+          WhatsApp's
+
+          <span
+            class="bg-yellow-300/70 px-1 py-1 text-yellow-950 md:px-2 md:py-2"
+          >
+            success lies in focusing on core tasks
+          </span>
+          , minimizing distractions, and avoiding meetings.
+        </p>
+        <div class="mt-4 text-right font-mono text-sm text-neutral-500">
+          <time
+            class="tracking-tighter"
+            datetime="2015-09-15"
+            aria-label="Information form: September 15th, 2015"
+            >September 15, 2015</time
+          >
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          WhatsApp
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          Erlang
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          BEAM
+        </div>
+      </article>
+
+      <article class="mt-14 text-center">
+        <header>
+          <p
+            class="font-mono text-lg font-bold uppercase tracking-wide text-red-600 sm:text-xl md:text-2xl"
+          >
+            hight scalability
+          </p>
+          <h2
+            class="my-2 text-3xl font-bold text-neutral-800 subpixel-antialiased sm:my-3 sm:text-4xl md:my-4"
+          >
+            Discord:
+            <span
+              class="inline-block border-b-4 border-white bg-neutral-800 px-1 font-mono tracking-wider text-white"
+            >
+              5,000,000
+            </span>
+            Million Concurrent Users and Millions of Events per Second
+          </h2>
+        </header>
+        <p
+          class="text-left font-serif text-lg leading-normal text-stone-800 sm:text-xl md:text-2xl"
+        >
+          Discord embraced Elixir early, leveraging the Erlang VM for a highly
+          concurrent, real-time system. The Elixir prototype established today's
+          infrastructure.
+          <span
+            class="bg-yellow-300/70 px-1 py-1 text-yellow-950 md:px-2 md:py-2"
+          >
+            We'd choose the same path again!
+          </span>
+        </p>
+        <div class="mt-4 text-right font-mono text-sm text-neutral-500">
+          <time
+            class="tracking-tighter"
+            datetime="2015-05-13"
+            aria-label="Information form: May 13th, 2015"
+            >May 13, 2015</time
+          >
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          Discord
+          <span class="font-sans font-bold text-stone-400" aria-hidden="true">
+            •
+          </span>
+          Elixir early adopter
+        </div>
+      </article>
+
+      <article id="elixir-case-studies" class="pt-14">
+        <header>
+          <h2
+            class="my-2 text-center text-3xl text-neutral-800 sm:my-3 sm:text-4xl md:my-4"
+          >
+            <a href="#elixir-case-studies">Elixir Case Studies</a>
+          </h2>
+          <p
+            class="text-left font-serif leading-normal text-stone-800 md:text-lg"
+          >
+            Real-world examples of how Elixir, Erlang,
+            <abbr title="Bogdan's Erlang Abstract Machine">BEAM</abbr>,
+            <abbr title="Open Telecom Platform">OTP</abbr>, Phoenix tech stack
+            has been successfully implemented, and the key benefits and results
+            achieved.
+          </p>
+        </header>
+
+        <section class="text-stone-800">
+          <article class="my-10">
+            <header>
+              <h3 class="bold text-xl">Bleacher Report</h3>
+            </header>
+            <ul class="list-inside list-disc font-serif">
+              <li><strong>150 servers were reduced to just 8</strong></li>
+              <li>Ability to handle 8x the traffic without autoscaling</li>
+              <li>
+                Adding content to all streams went from 30-40 seconds to 3-4
+                seconds
+              </li>
+              <li>
+                95th percentile
+                <strong>
+                  latency hovers around 100ms and is not noticeably affected by
+                  traffic spikes
+                </strong>
+              </li>
+              <li>
+                Runs on about 1/10th of the servers with low CPU utilization
+              </li>
+              <li>10x reduction in the time it takes to update the site</li>
+              <li>
+                <strong>
+                  The system easily handles over 200 million push notifications
+                  per day
+                </strong>
+              </li>
+            </ul>
+            <p>
+              <a
+                class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+                href="https://www.erlang-solutions.com/case-studies/bleacher-report-case-study/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                erlang-solutions.com/case-studies/bleacher-report-case-study
+              </a>
+            </p>
+          </article>
+
+          <article class="my-10">
+            <header>
+              <h3 class="bold text-xl">WhatsApp</h3>
+            </header>
+            <ul class="list-inside list-disc font-serif">
+              <li>
+                <strong>
+                  Only 50 Software Engineers and 900,000,000 Users
+                </strong>
+              </li>
+              <li>
+                Back in 2011, WhatsApp was able to handle one million
+                established TCP sessions on a single machine, with plenty of
+                memory and CPU capacity to spare.
+              </li>
+              <li>
+                <a
+                  class="underline"
+                  href="https://twitter.com/WhatsApp/status/286591302185938946"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Back in 2013</a
+                >, WhatsApp managed to process a whopping 18 billion messages
+                within just 24 hours. This included 7 billion incoming messages
+                and 11 billion outgoing messages.
+              </li>
+            </ul>
+            <p>
+              <a
+                class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+                href="https://www.wired.com/2015/09/whatsapp-serves-900-million-users-50-engineers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                wired.com/2015/09/whatsapp-serves-900-million-users-50-engineers
+              </a>
+            </p>
+          </article>
+
+          <article class="my-10">
+            <header>
+              <h3 class="bold text-xl">Discord</h3>
+            </header>
+            <ul class="list-inside list-disc font-serif">
+              <li>
+                <strong>
+                  5,000,000 Million Concurrent Users and Millions of Events per
+                  Second
+                </strong>
+              </li>
+              <li>
+                The initial Discord prototype was built in Elixir, forming the
+                basis for its current infrastructure
+              </li>
+              <li>
+                The lookup cost of ETS is reduced from 17.5 seconds to 0.3us
+                thanks to
+                <a
+                  class="underline"
+                  href="https://github.com/discord/fastglobal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >FastGlobal</a
+                >.
+              </li>
+            </ul>
+            <p>
+              <a
+                class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+                href="https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users
+              </a>
+            </p>
+          </article>
+
+          <p>
+            More
+            <a
+              class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+              href="https://elixir-lang.org/cases.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Elixir case studies</a
+            >.
+          </p>
+        </section>
+      </article>
+
+      <article id="elixir-enterprise-support" class="pt-14">
+        <h2
+          class="my-2 text-center text-3xl text-neutral-800 sm:my-3 sm:text-4xl md:my-4"
+        >
+          <a href="#elixir-enterprise-support">Elixir Enterprise Support</a>
+        </h2>
+        <ul class="list-inside list-disc md:text-lg">
+          <li>
+            Dashbit —
+            <a
+              class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+              href="https://dashbit.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              dashbit.co
+            </a>
+            <em>
+              José Valim creator of
+              <a
+                class="underline"
+                href="https://elixir-lang.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Elixir</a
+              >
+              and
+              <a
+                class="underline"
+                href="https://github.com/elixir-plug/plug"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Plug
+              </a>
+              is there!
+            </em>
+          </li>
+          <li>
+            DockYard —
+            <a
+              class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+              href="https://dockyard.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              dockyard.com
+            </a>
+          </li>
+          <li>
+            Erlang Solutions
+            <a
+              class="border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+              href="https://www.erlang-solutions.com/consultancy/consulting/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              erlang-solutions.com/consultancy/consulting
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <article id="elixir-with-love" class="pt-14">
+        <h2
+          class="my-2 text-center text-3xl text-neutral-800 sm:my-3 sm:text-4xl md:my-4"
+        >
+          <a href="#elixir-with-love">Elixir With Love ❤️</a>
+        </h2>
+        <p
+          class="text-left font-serif leading-normal text-stone-800 md:text-xl"
+        >
+          Elixir is the second
+          <a
+            class="group border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+            href="https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <em class="hover:text-white group-only:text-red-600"
+              >most loved language</em
+            >
+          </a>
+          while
+          <a
+            class="group border-b border-indigo-700 px-[2px] text-indigo-700 hover:bg-indigo-700 hover:text-white"
+            href="https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Phoenix is the
+            <em class="hover:text-white group-only:text-red-600"
+              >most loved framework</em
+            >
+            on the planet
+          </a>
+          .
+        </p>
+
+        <strong
+          class="m-4 block bg-red-600 px-1 py-4 text-center font-normal text-white md:m-6 md:px-2 md:py-6 md:text-xl"
+        >
+          "You can't compete with someone who is having fun" — Naval Ravikant
+        </strong>
+      </article>
+
+      <section id="elixir-showcase" class="pt-14">
+        <h2
+          class="my-2 text-center text-3xl text-neutral-800 sm:my-3 sm:text-4xl md:my-4"
+        >
+          <a href="#elixir-showcase">Elixir Showcase</a>
+        </h2>
+
+        <article id="phoenix-liveview-showcase" class="pt-10">
+          <h3
+            class="my-2 text-xl text-neutral-800 sm:mt-3 sm:text-2xl md:mt-10"
+          >
+            <a href="#phoenix-liveview-showcase">Phoenix LiveView Showcase</a>
+          </h3>
+          <div>
+            <iframe
+              class="h-[300px] w-full sm:h-[400px] md:h-[600px]"
+              src="https://www.youtube-nocookie.com/embed/8xJzHq8ru0M"
+              title="Keynote: Phoenix LiveView - Interactive Apps without JavaScript by Chris McCord"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="text-right text-neutral-800">
+              Keynote: Phoenix LiveView - Interactive Apps without JavaScript by
+              <a
+                class="underline"
+                href="https://twitter.com/chris_mccord"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chris McCord
+              </a>
+              .
+            </p>
+          </div>
+        </article>
+
+        <article id="livebook-machine-learning-example" class="pt-10">
+          <h3
+            class="my-2 text-xl text-neutral-800 sm:mt-3 sm:text-2xl md:mt-10"
+          >
+            <a href="#livebook-machine-learning-example"
+              >Livebook - Machine Learning Example</a
+            >
+          </h3>
+          <div>
+            <iframe
+              class="h-[300px] w-full sm:h-[400px] md:h-[600px]"
+              src="https://www.youtube.com/embed/MSMyRBJAoSs"
+              title="Distributed² Machine Learning notebooks with Elixir and Livebook by José Valim"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="text-right text-neutral-800">
+              Distributed² Machine Learning notebooks with Elixir and Livebook
+              by
+              <a
+                class="underline"
+                href="https://twitter.com/josevalim"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                José Valim
+              </a>
+              .
+            </p>
+          </div>
+        </article>
+
+        <article id="debbgging-elixir-in-production" class="pt-10">
+          <h3
+            class="my-2 text-xl text-neutral-800 sm:mt-3 sm:text-2xl md:mt-10"
+          >
+            <a href="#debbgging-elixir-in-production"
+              >Debugging Elixir in Production</a
+            >
+          </h3>
+          <!-- <div class="aspect-w-16 aspect-h-9"> -->
+          <div>
+            <iframe
+              class="h-[300px] w-full sm:h-[400px] md:h-[600px]"
+              src="https://www.youtube-nocookie.com/embed/JvBT4XBdoUE"
+              title="The Soul of Erlang and Elixir by Saša Jurić"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="text-right text-neutral-800">
+              The Soul of Erlang and Elixir by
+              <a
+                class="underline"
+                href="https://twitter.com/sasajuric"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saša Jurić
+              </a>
+              .
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="mt-10 min-h-[200px] bg-indigo-950 text-indigo-50">
+      <section class="mx-auto max-w-4xl px-4 pt-4 sm:px-6 md:px-8">
+        <ul>
+          <li>
+            <a
+              class="underline"
+              href="http://highscalability.com/display/Search?moduleId=4876569&searchQuery=erlang"
+              target="_blank"
+              rel="noopener noreferrer"
+              >High Scalability</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://elixir-lang.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Elixir</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://www.erlang.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Erlang</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://erlef.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Erlang Ecosystem Foundation</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://www.phoenixframework.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Phoenix framework</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://hexdocs.pm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HexDocs</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://elixirschool.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Elixir School</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline"
+              href="https://pragprog.com/search/?q=elixir"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Elixir books</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="mx-auto max-w-4xl px-4 pt-10 sm:px-6 md:px-8">
+        <div>
+          <p>
+            <a
+              rel="license"
+              href="//creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                aria-hidden="true"
+                alt="Creative Commons License"
+                src="//i.creativecommons.org/l/by/4.0/88x31.png"
+            /></a>
+          </p>
+          <p class="text-sm sm:text-base">
+            This work is licensed under a
+            <a
+              rel="license"
+              href="//creativecommons.org/licenses/by/4.0/"
+              class="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Creative Commons Attribution 4.0 International License</a
+            >.
+          </p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
