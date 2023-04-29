@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build-css": "tailwindcss -i tailwind.css -o tailwind-prod.css"
+  },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "htmlhint": "^1.1.4",
